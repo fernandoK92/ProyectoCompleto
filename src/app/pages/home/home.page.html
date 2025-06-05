@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button expand="block" (click)="tomarFoto()">📷 Tomar Foto</ion-button>
+  <img *ngIf="foto" [src]="foto" style="width: 100%; margin-top: 10px;" />
+
+  <ion-button expand="block" (click)="obtenerUbicacion()">📍 Obtener Ubicación</ion-button>
+
+  <ion-button expand="block" (click)="verificarHuella()">👆 Verificar Huella</ion-button>
+
+  <ion-button expand="block" (click)="initializePush()">🔔 Activar Notificaciones Push</ion-button>
+</ion-content>

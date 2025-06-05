@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="form" (ngSubmit)="login()">
+    <ion-input formControlName="email" placeholder="Email"></ion-input>
+    <ion-input formControlName="password" type="password" placeholder="Contraseña"></ion-input>
+    <ion-button expand="block" type="submit">Iniciar sesión</ion-button>
+  </form>
+  <ion-button expand="block" fill="clear" (click)="goToRegister()">
+  ¿No tienes cuenta? Regístrate
+</ion-button>
+</ion-content>

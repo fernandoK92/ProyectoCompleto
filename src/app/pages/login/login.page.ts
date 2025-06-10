@@ -29,6 +29,7 @@ export class LoginPage implements OnInit {
     private fb: FormBuilder,
     private auth: AuthService,
     private router: Router
+    
   ) {
     this.form = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
